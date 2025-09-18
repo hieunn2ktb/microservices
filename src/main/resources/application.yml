@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE    # DB chạy trong bộ nhớ (in-memory)
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true              # Bật console H2
+      path: /h2-console          # Đường dẫn truy cập http://localhost:8080/h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update           # tạo/update bảng theo Entity (create | create-drop | update | validate | none)
+    show-sql: true               # In câu SQL ra console (debug)
+    properties:
+      hibernate:
+        format_sql: true         # format SQL đẹp hơn
