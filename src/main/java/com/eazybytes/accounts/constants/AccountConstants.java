@@ -17,5 +17,5 @@ public class AccountConstants {
     public static final String STATUS_401 = "401";
     public static final String MESSAGE_401 = "Request processed successfully";
     public static final String STATUS_500 = "500";
-    public static final String MESSAGE_402 = "An error occurred while processing the request";
+    public static final String MESSAGE_500 = "";
 }
